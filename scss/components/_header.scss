@@ -1,0 +1,58 @@
+.header {
+  // position: relative; ??
+  max-width: 1335px;
+  padding: 30px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 42px 0;
+  gap: 30px;
+}
+// ===================
+.header {
+}
+.logo{
+  margin-right: auto;
+}
+.nav__list {
+  display: flex;
+  gap: 30px;
+}
+.nav__item {
+}
+.nav__link {
+  font-size: 1.8em;
+  color: $black;
+  font-weight: $fw-bold;
+  line-height: 25.2px; /* 140% */
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: -10px;
+    left: -4px;
+    transform: scaleX(0);
+    background: #FFA01B ;
+    transform-origin: bottom right;
+    transition: transform .5s ease-out;
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+}
+.btn {
+  border-radius: 12px;
+  background: #F7859C;
+  padding: 10px 28px;
+  color: $white;
+  font-size: 1.8em;
+  font-weight: $fw-bold;
+  line-height: 25.2px; /* 140% */
+}
